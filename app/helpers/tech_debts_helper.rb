@@ -1,0 +1,2 @@
+module TechDebtsHelper
+end

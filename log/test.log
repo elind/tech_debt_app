@@ -1,0 +1,140 @@
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" [0m
+
+
+Processing PagesController#create (for 0.0.0.0 at 2008-08-15 07:17:35) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"pages", "page"=>{}}
+  [4;35;1mPage Create (0.000000)[0m   [0mINSERT INTO "pages" ("name", "updated_at", "created_at") VALUES(NULL, '2008-08-15 05:17:35', '2008-08-15 05:17:35')[0m
+Redirected to http://test.host/pages/996332878
+Completed in 0.00900 (111 reqs/sec) | DB: 0.00200 (22%) | 302 Found [http://test.host/pages?]
+  [4;36;1mSQL (0.001000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" [0m
+  [4;35;1mSQL (0.001000)[0m   [0mSELECT count(*) AS count_all FROM "pages" [0m
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 953125641) [0m
+
+
+Processing PagesController#destroy (for 0.0.0.0 at 2008-08-15 07:17:35) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 953125641) [0m
+  [4;36;1mPage Destroy (0.001000)[0m   [0;1m DELETE FROM "pages"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/pages
+Completed in 0.00300 (333 reqs/sec) | DB: 0.00300 (100%) | 302 Found [http://test.host/pages/953125641]
+  [4;35;1mSQL (0.001000)[0m   [0mSELECT count(*) AS count_all FROM "pages" [0m
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 953125641) [0m
+
+
+Processing PagesController#edit (for 0.0.0.0 at 2008-08-15 07:17:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 953125641) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+Completed in 0.02900 (34 reqs/sec) | Rendering: 0.02800 (96%) | DB: 0.00100 (3%) | 200 OK [http://test.host/pages/953125641/edit]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2008-08-15 07:17:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 0.00600 (166 reqs/sec) | Rendering: 0.00400 (66%) | DB: 0.00000 (0%) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#new (for 0.0.0.0 at 2008-08-15 07:17:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/pages
+Rendering pages/new
+Completed in 0.00900 (111 reqs/sec) | Rendering: 0.00900 (100%) | DB: 0.00000 (0%) | 200 OK [http://test.host/pages/new]
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 953125641) [0m
+
+
+Processing PagesController#show (for 0.0.0.0 at 2008-08-15 07:17:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"pages"}
+  [4;36;1mPage Load (0.001000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 953125641) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+Completed in 0.00900 (111 reqs/sec) | Rendering: 0.00800 (88%) | DB: 0.00100 (11%) | 200 OK [http://test.host/pages/953125641]
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 953125641) [0m
+
+
+Processing PagesController#update (for 0.0.0.0 at 2008-08-15 07:17:35) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "controller"=>"pages", "page"=>{}}
+  [4;36;1mPage Load (0.001000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 953125641) [0m
+Redirected to http://test.host/pages/953125641
+Completed in 0.00200 (499 reqs/sec) | DB: 0.00100 (50%) | 302 Found [http://test.host/pages/953125641?]
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "tech_debts" [0m
+
+
+Processing TechDebtsController#create (for 0.0.0.0 at 2008-08-15 07:17:35) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "tech_debt"=>{}, "controller"=>"tech_debts"}
+  [4;36;1mTechDebt Create (0.000000)[0m   [0;1mINSERT INTO "tech_debts" ("reporter", "updated_at", "title", "keywords", "location", "created_at") VALUES(NULL, '2008-08-15 05:17:35', NULL, NULL, NULL, '2008-08-15 05:17:35')[0m
+Redirected to http://test.host/tech_debts/996332878
+Completed in 0.00700 (142 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/tech_debts?]
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "tech_debts" [0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mSELECT count(*) AS count_all FROM "tech_debts" [0m
+  [4;35;1mTechDebt Load (0.001000)[0m   [0mSELECT * FROM "tech_debts" WHERE ("tech_debts"."id" = 953125641) [0m
+
+
+Processing TechDebtsController#destroy (for 0.0.0.0 at 2008-08-15 07:17:35) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"tech_debts"}
+  [4;36;1mTechDebt Load (0.000000)[0m   [0;1mSELECT * FROM "tech_debts" WHERE ("tech_debts"."id" = 953125641) [0m
+  [4;35;1mTechDebt Destroy (0.000000)[0m   [0m DELETE FROM "tech_debts"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/tech_debts
+Completed in 0.00300 (333 reqs/sec) | DB: 0.00200 (66%) | 302 Found [http://test.host/tech_debts/953125641]
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "tech_debts" [0m
+  [4;35;1mTechDebt Load (0.000000)[0m   [0mSELECT * FROM "tech_debts" WHERE ("tech_debts"."id" = 953125641) [0m
+
+
+Processing TechDebtsController#edit (for 0.0.0.0 at 2008-08-15 07:17:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"tech_debts"}
+  [4;36;1mTechDebt Load (0.001000)[0m   [0;1mSELECT * FROM "tech_debts" WHERE ("tech_debts"."id" = 953125641) [0m
+Rendering template within layouts/tech_debts
+Rendering tech_debts/edit
+Completed in 0.01000 (100 reqs/sec) | Rendering: 0.00900 (90%) | DB: 0.00100 (9%) | 200 OK [http://test.host/tech_debts/953125641/edit]
+
+
+Processing TechDebtsController#index (for 0.0.0.0 at 2008-08-15 07:17:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"tech_debts"}
+  [4;35;1mTechDebt Load (0.000000)[0m   [0mSELECT * FROM "tech_debts" WHERE ((tech_debts.created_at < '2008-08-15 05:17:35') AND (tech_debts.created_at > '2008-08-15 05:17:35')) [0m
+Rendering template within layouts/tech_debts
+Rendering tech_debts/index
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.01600 (84%) | DB: 0.00000 (0%) | 200 OK [http://test.host/tech_debts]
+
+
+Processing TechDebtsController#new (for 0.0.0.0 at 2008-08-15 07:17:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"tech_debts"}
+Rendering template within layouts/tech_debts
+Rendering tech_debts/new
+Completed in 0.00300 (333 reqs/sec) | Rendering: 0.00300 (100%) | DB: 0.00000 (0%) | 200 OK [http://test.host/tech_debts/new]
+  [4;36;1mTechDebt Load (0.000000)[0m   [0;1mSELECT * FROM "tech_debts" WHERE ("tech_debts"."id" = 953125641) [0m
+
+
+Processing TechDebtsController#show (for 0.0.0.0 at 2008-08-15 07:17:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"tech_debts"}
+  [4;35;1mTechDebt Load (0.000000)[0m   [0mSELECT * FROM "tech_debts" WHERE ("tech_debts"."id" = 953125641) [0m
+Rendering template within layouts/tech_debts
+Rendering tech_debts/show
+Completed in 0.00700 (142 reqs/sec) | Rendering: 0.00500 (71%) | DB: 0.00000 (0%) | 200 OK [http://test.host/tech_debts/953125641]
+  [4;36;1mTechDebt Load (0.001000)[0m   [0;1mSELECT * FROM "tech_debts" WHERE ("tech_debts"."id" = 953125641) [0m
+
+
+Processing TechDebtsController#update (for 0.0.0.0 at 2008-08-15 07:17:35) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "tech_debt"=>{}, "controller"=>"tech_debts"}
+  [4;35;1mTechDebt Load (0.001000)[0m   [0mSELECT * FROM "tech_debts" WHERE ("tech_debts"."id" = 953125641) [0m
+Redirected to http://test.host/tech_debts/953125641
+Completed in 0.00200 (500 reqs/sec) | DB: 0.00200 (100%) | 302 Found [http://test.host/tech_debts/953125641?]
