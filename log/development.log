@@ -2973,3 +2973,21 @@ ActionView::MissingTemplate (Missing template tech_debts/index.html.erb in view 
 
 Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
   [4;36;1mTechDebt Load (0.002000)[0m   [0;1mSELECT * FROM "tech_debts" [0m
+
+
+Processing TechDebtsController#index (for 127.0.0.1 at 2008-08-15 12:46:52) [GET]
+  Session ID: 8c0fe28d505a86cb292b18f09bd43987
+  Parameters: {"action"=>"index", "controller"=>"tech_debts"}
+  [4;36;1mTechDebt Load (0.002052)[0m   [0;1mSELECT * FROM "tech_debts" [0m
+Rendering tech_debts/index
+Completed in 0.08936 (11 reqs/sec) | Rendering: 0.06042 (67%) | DB: 0.00205 (2%) | 200 OK [http://localhost/tech_debts]
+
+
+Processing TechDebtsController#index (for 127.0.0.1 at 2008-08-15 12:46:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjg4ZTg2MTBhNTA5MmYwYTNlMGU4NGEzNDA1MGU4
+MTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--74a90c09ba4687c86f1666c1be3d294af526cb2f
+  Parameters: {"commit"=>"Apply filter", "priority"=>"2", "action"=>"index", "older_than"=>"-", "controller"=>"tech_debts", "newer_than"=>"-", "keyword"=>"-"}
+  [4;35;1mTechDebt Load (0.002880)[0m   [0mSELECT * FROM "tech_debts" [0m
+Rendering tech_debts/index
+Completed in 0.03787 (26 reqs/sec) | Rendering: 0.03191 (84%) | DB: 0.00288 (7%) | 200 OK [http://localhost/tech_debts?keyword=-&newer_than=-&older_than=-&priority=2&commit=Apply+filter]
